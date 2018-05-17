@@ -27,10 +27,10 @@ def main():
 
 def get_args():
     parser = argparse.ArgumentParser()
-    home = os.path.expanduser("~")
-    source_dir = os.path.join(home, "data", "squad")
+    #home = os.path.expanduser("~")
+    source_dir = os.path.join("data", "squad")
     target_dir = "data/squad"
-    glove_dir = os.path.join(home, "data", "glove")
+    glove_dir = os.path.join("data", "glove")
     parser.add_argument("--source_dir", default=source_dir)
     parser.add_argument("--target_dir", default=target_dir)
     parser.add_argument("--debug", default=False, type=bool_)

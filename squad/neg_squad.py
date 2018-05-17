@@ -19,7 +19,7 @@ def main():
 
 def get_args():
     parser = argparse.ArgumentParser()
-    home = os.path.expanduser("~")
+    #home = os.path.expanduser("~")
     parser.add_argument("source_path")
     parser.add_argument("target_path")
     parser.add_argument('-d', "--debug", action='store_true')
